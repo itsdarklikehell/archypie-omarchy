@@ -1,0 +1,69 @@
+# Maintainer: ArchyPie Team <dev@omarchy.ai>
+# PKGBUILD for ArchyPie-Setup
+
+pkgname=archypie-setup
+pkgver=5.0.0_beta
+pkgrel=1
+pkgdesc="RetroPie-style emulator installer for Arch Linux (used on /omarchy)"
+arch=('any')
+url='https://github.com/V0rt3x667/ArchyPie-Setup'
+license=('GPL3')
+depends=('bash' 'dialog' 'pacman' 'tar' 'gzip' 'gpg' 'git' 'python' 'unzip' 'xmlstarlet')
+makedepends=('base-devel' 'git')
+provides=('archypie-setup')
+conflicts=('archypie-setup')
+
+source=("$pkgname.sh::$url/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    : # ArchyPie-Setup is a bash installer; no compilation needed
+}
+
+package() {
+    local src="$srcdir/archypie-setup-$pkgver"
+
+    # Install the setup scripts to /opt/archypie (system location)
+    mkdir -p "$pkgdir/opt/archypie"
+    cp -a "$src"/. "$pkgdir/opt/archypie/"
+
+    # Install supplementary files
+    mkdir -p "$pkgdir/opt/archypie/supplementary"
+    cp -a "$src/scriptmodules/supplementary/." "$pkgdir/opt/archypie/supplementary/"
+
+    # Install scriptmodules
+    mkdir -p "$pkgdir/opt/archypie/scriptmodules"
+    cp -a "$src/scriptmodules/." "$pkgdir/opt/archypie/scriptmodules/"
+
+    # Install config templates
+    mkdir -p "$pkgdir/opt/archypie/configs"
+    if [[ -d "$src/configs" ]]; then
+        cp -a "$src/configs/." "$pkgdir/opt/archypie/configs/"
+    fi
+
+    # Install the entry point wrapper
+    install -Dm755 "$pkgdir/opt/archypie/archypie_setup.sh" "$pkgdir/opt/archypie/archypie_setup.sh"
+
+    # Install a systemd service for auto-start (optional)
+    mkdir -p "$pkgdir/usr/lib/systemd/system"
+    cat > "$pkgdir/usr/lib/systemd/system/archypie-setup.service" << 'EOF'
+[Unit]
+Description=ArchyPie emulator launcher
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/archypie-setup
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+    # Install the command wrapper
+    mkdir -p "$pkgdir/usr/bin"
+    cat > "$pkgdir/usr/bin/archypie-setup" << 'EOF'
+#!/usr/bin/env bash
+# ArchyPie setup command (user-facing wrapper)
+exec sudo /opt/archypie/archypie_setup.sh "$@"
+EOF
+    chmod +x "$pkgdir/usr/bin/archypie-setup"
+}
