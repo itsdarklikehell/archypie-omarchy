@@ -1,0 +1,50 @@
+# ArchyPie integration into the /omarchy menu (Install > Gaming)
+#
+# This patch adds "ArchyPie" under Install > Gaming in the Omarchy menu.
+# Apply to the omarchy repo at the `quattro` ref, then the desktop file and
+# install script land in default/applications/ and bin/.
+#
+# The menu entry uses `target: install.gaming` so it appears as a row under
+# the Gaming submenu. `when` shows the row on user login; `disabled`
+# (set in the shipped menu) keeps the row visible but greyed when an
+# installation already exists.
+
+--- /dev/null
++++ b/default/omarchy/omarchy-menu.jsonc
+@@ -285,6 +285,15 @@
+   "install.gaming": {"icon":"","label":"Gaming"},
+   "install.browser": {"icon":"","label":"Browser"},
+   "install.webapp": {"icon":"","label":"Web App","action":"omarchy-launch-floating-terminal-with-presentation omarchy-webapp-install"},
++  "install.gaming.archypie": {
++      "icon": "",
++      "label": "ArchyPie",
++      "description": "RetroPie-style emulator launcher for Arch",
++      "target": "install.gaming",
++      "when": "[[ -d $HOME/ArchyPie ]]",
++      "disabled": "[[ ! -d $HOME/ArchyPie ]]"
++  },
+   "install.terminal": {"icon":"","label":"Terminal"},
+   "install.tui": {"icon":"","label":"TUI","action":"omarchy-launch-floating-terminal-with-presentation omarchy-tui-install"},
+--- /dev/null
++++ b/default/applications/archypie.desktop
+@@ -0,0 +1,10 @@
++[Desktop Entry]
++Type=Application
++Name=ArchyPie
++Comment=RetroPie-style emulator launcher for Arch
++Icon=archypie
++Exec=uwsm-app -- gnome-terminal --full-screen --hide-menubar -e "sudo %s/archypie_setup.sh" %
++Categories=Games;Emulator;
+--- /dev/null
++++ b/bin/omarchy-install-gaming-archypie
+@@ -0,0 +1,11 @@
++#!/usr/bin/env bash
++# Install ArchyPie under Install > Gaming in the Omarchy menu.
++#
++# Called from the Omarchy menu (`install.gaming.archypie`). The ArchyPie
++# setup is a self-contained bash installer that must run under sudo.
++set -euo pipefail
++
++ARCHYPIE_DIR="${1:-/opt/archypie}"
++[[ -f "${ARCHYPIE_DIR}/archypie_setup.sh" ]] || { echo "Not found at ${ARCHYPIE_DIR}" >&2; exit 1; }
++sudo "${ARCHYPIE_DIR}/archypie_setup.sh" setup gui

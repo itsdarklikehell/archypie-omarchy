@@ -29,7 +29,7 @@ function install_bin_archypiemenu() {
 
 function configure_archypiemenu() {
     if [[ "${md_mode}" == "install" ]]; then
-        local rpdir="${home}/ArchyPie/archypiemenu"
+        local rpdir="${home}/.local/share/archypie/archypiemenu"
         mkdir -p "${rpdir}"
         cp -Rv "${md_data}/icons" "${rpdir}/"
         chown -R "${__user}":"${__group}" "${rpdir}"
@@ -94,7 +94,7 @@ function configure_archypiemenu() {
             file="${files[i]}"
             name="${names[i]}"
             desc="${descs[i]}"
-            image="${home}/ArchyPie/archypiemenu/icons/${files[i]}.png"
+            image="${home}/.local/share/archypie/archypiemenu/icons/${files[i]}.png"
 
             touch "${rpdir}/${file}.rp"
 
@@ -107,7 +107,7 @@ function configure_archypiemenu() {
 }
 
 function remove_archypiemenu() {
-    rm -rf "${home}/ArchyPie/archypiemenu"
+    rm -rf "${home}/.local/share/archypie/archypiemenu"
     rm -rf "${home}/.emulationstation/gamelists/archypie"
     delSystem archypie
 }
@@ -147,7 +147,7 @@ function launch_archypiemenu() {
             fi
             ;;
         *.sh)
-            cd "${home}/ArchyPie/archypie" || exit
+            cd "${home}/.local/share/archypie/archypie" || exit
             sudo -u "${__user}" bash "${command}"
             ;;
     esac

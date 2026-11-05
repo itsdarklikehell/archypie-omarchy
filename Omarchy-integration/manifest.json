@@ -1,0 +1,10 @@
+{
+  "id": "archypie-omarchy",
+  "name": "ArchyPie on Omarchy",
+  "version": "0.1.0",
+  "description": "Bundles ArchyPie-Setup skills and read-only helpers for integrating ArchyPie into the /omarchy menu (Install > Gaming).",
+  "author": "ArchyPie / Omarchy team",
+  "license": "GPL-3.0",
+  "entry": "skills/archypie-omarchy/SKILL.md",
+  "contact": "github.com/V0rt3x667/ArchyPie-Setup"
+}

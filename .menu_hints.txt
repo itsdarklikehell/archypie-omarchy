@@ -1,0 +1,246 @@
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:653: # generate menu from options
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:662: # so we can handle some options with a custom menu etc
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:694: local cmd=(dialog --backtitle "$__backtitle" --default-item "$sel" --item-help --help-button --menu "Please choose the setting to modify in $config" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:749: cmd=(dialog --backtitle "$__backtitle" --default-item "$default" --menu "Please Choose The Value For ${keys[sel]}" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:1225: ## @brief Adds a port to the emulationstation ports menu.
+/home/rizzo/ArchyPie-Setup/scriptmodules/helpers.sh:1283: ## switched between via the runcommand launch menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key.sh:8: rp_module_desc="Provides Joystick To Keyboard Conversion For Navigation Of ArchyPie Dialog Menus"
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:245: cmd=(dialog --backtitle "$__backtitle" --cancel-label "Back" --default-item "$default" --menu "Choose an option for ${id}\n$status" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:407: local cmd=(dialog --colors --backtitle "$__backtitle" --cancel-label "Back" --item-help --help-button --default-item "$default" --menu "$status" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:415: # Get ID of menu item
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:484: local cmd=(dialog --backtitle "$__backtitle" --cancel-label "Back" --item-help --help-button --default-item "$default" --menu "Choose an option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:593: cmd=(dialog --backtitle "$__backtitle" --cancel-label "Back" --item-help --help-button --default-item "$default" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:645: cmd=(dialog --backtitle "$__backtitle" --title "ArchyPie-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/setup.sh:658: "S Update the ArchyPie-Setup script. This will update the main management script only, but will not update any software packages. To update packages use the 'Up
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:463: Returns the state of 'menu_swap_ok_cancel_buttons' configuration for RetroArch
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:469: menu_swap = config['device']['menu_swap_ok_cancel_buttons'].strip('"') == 'true'
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:471: menu_swap = False
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:473: return menu_swap
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:538: menu_swap = ra_btn_swap_config()
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:539: # If button A is <enter> and menu_swap_ok_cancel_buttons is true, swap buttons A and B functions
+/home/rizzo/ArchyPie-Setup/scriptmodules/admin/joy2key/joy2key_sdl.py:540: if menu_swap \
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/openmsx.sh:42: sed -e "s|-types {hidden d} \".openMSX\"|-types \"ArchyPie/configs/${md_id}\"|g" -i "${md_build}/share/scripts/_osd_menu.tcl"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/px68k.sh:73: MenuLanguage=1
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:239: iniSet "all_users_control_menu" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:242: # RGUI Menu By Default
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:243: iniSet "menu_driver" "rgui"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:247: iniSet "menu_rgui_shadows" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:248: iniSet "rgui_menu_color_theme" "29" # Tango Dark Theme
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:250: # Hide Online Updater Menu Options And The Restart Option
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:251: iniSet "menu_show_core_updater" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:252: iniSet "menu_show_online_updater" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:253: iniSet "menu_show_restart_retroarch" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:256: iniSet "menu_disable_search_button" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:258: # Remove Some Options From Quick Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:259: iniSet "quick_menu_show_close_content" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:260: iniSet "quick_menu_show_add_to_favorites" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:261: iniSet "quick_menu_show_replay" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:262: iniSet "quick_menu_show_start_recording" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:263: iniSet "quick_menu_show_start_streaming" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:264: iniSet "menu_show_overlays" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:267: iniSet "menu_show_load_content_animation" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:273: # Disable Unnecessary XMB Menu Tabs
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:279: # Disable XMB Menu Driver Icon Shadows
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:283: iniSet "menu_swap_ok_cancel_buttons" "${es_swap}"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:285: # Enable "menu_unified_controls" By Default
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:286: iniSet "menu_unified_controls" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:304: # If No Menu_Driver Is Set Force RGUI As The Default Has Now Changed To XMB
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:305: _set_config_option_retroarch "menu_driver" "rgui"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:310: # If No "menu_unified_controls" Is Set, Force It On So That Keyboard Player 1 Can Control
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:311: # The RGUI Menu Which Is Important For Arcade Sticks That Map To Keyboard Inputs
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:312: _set_config_option_retroarch "menu_unified_controls" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:324: _set_config_option_retroarch "menu_show_load_content_animation" "false"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:327: _set_config_option_retroarch "menu_disable_search_button" "true"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:372: local cmd=(dialog --backtitle "${__backtitle}" --menu "Choose The Desired Hotkey Behaviour" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:383: iniSet "input_menu_toggle" "F1"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:388: iniSet "input_menu_toggle" "F1"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:393: iniSet "input_menu_toggle" "escape"
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:426: local cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/emulators/retroarch.sh:434: cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option For ${dir}" 12 40 06)
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/solarus.sh:121: # Start The Menu GUI
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/solarus.sh:128: # Create Menu Options
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/solarus.sh:134: # Show Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/solarus.sh:135: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --menu "Choose An Option" 16 60 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/vvvvvv.sh:36: sed -e "s|prefDir = PHYSFS_getPrefDir(\"distractionware\", \"VVVVVV\");|prefDir = \"/opt/archypie/configs/ports/vvvvvv/\";|g" -i "${md_build}/desktop_version/sr
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/vvvvvv.sh:39: sed -e "s|_this->fullscreen = false;|_this->fullscreen = true;|g" -i "${md_build}/desktop_version/src/Screen.cpp"
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/vvvvvv.sh:49: -S"desktop_version" \
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/vvvvvv.sh:68: 'desktop_version/fonts'
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/vvvvvv.sh:69: 'desktop_version/lang'
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/xash3d-fwgs.sh:129: [[ "${dir}" == "xash3d-fwgs" ]] && params+=('--enable-packaging' '--disable-vgui' '--disable-menu-changegame')
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/xash3d-fwgs.sh:142: "${md_id}/build/3rdparty/mainui/libmenu.so"
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:22: # Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:23: function main_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:28: cmd=("${DIALOG[@]}" --menu "Main Menu" 0 0 0)
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:37: L) init_args && select_level_menu && return ;;
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:38: S) init_args && start_server_menu && select_level_menu && return ;;
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:39: C) init_args && connect_server_menu && select_level_menu && return ;;
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:45: # Select Level Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:46: function select_level_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:47: local cmd=("${DIALOG[@]}" --ok-label "Start" --extra-button --extra-label "Start Mirror" --menu "Select Level" 16 0 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:64: # Start Server Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:65: function start_server_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:66: local cmd=("${DIALOG[@]}" --menu "Number of Players" 0 0 0)
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:76: # Connect to Server Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:77: function connect_server_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:96: # Start Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/ports/jumpnbump/jumpnbump.sh:97: main_menu || exit
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:7: rp_module_id="archypiemenu"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:8: rp_module_desc="ArchyPie Menu: Configuration Menu for EmulationStation"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:12: function _update_hook_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:18: function depends_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:26: function install_bin_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:30: function configure_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:32: local rpdir="${home}/ArchyPie/archypiemenu"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:75: 'Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:80: setESSystem "ArchyPie" "archypie" "${rpdir}" ".rp .sh" "sudo ${scriptdir}/archypie_packages.sh archypiemenu launch %ROM%" "" "archypie"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:97: image="${home}/ArchyPie/archypiemenu/icons/${files[i]}.png"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:109: function remove_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:110: rm -rf "${home}/ArchyPie/archypiemenu"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:115: function launch_archypiemenu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/archypiemenu.sh:126: su "${__user}" -c "XDG_RUNTIME_DIR=/run/user/${SUDO_UID} \"${emudir}/retroarch/bin/retroarch\" --menu --config \"${configdir}/all/retroarch.cfg\""
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/audiosettings.sh:57: local cmd=(dialog --backtitle "${__backtitle}" --menu "Set Audio Output (ALSA - Compat)" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/audiosettings.sh:122: local cmd=(dialog --backtitle "${__backtitle}" --menu "Set Audio Output (ALSA)" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/audiosettings.sh:269: local cmd=(dialog --backtitle "${__backtitle}" --menu "Set Audio Output (${sound_server})" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:55: ln -sf "/usr/share/applications/archypie.desktop" "${home}/.config/autostart/"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:74: rm "${home}/.config/autostart/archypie.desktop"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:95: cmd=(dialog --backtitle "${__backtitle}" --menu "Choose The Desired Boot Behaviour" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:105: if [[ -f "${home}/.config/autostart/archypie.desktop" ]]; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:121: options+=(DL "Boot To Desktop (Require Login)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/autostart.sh:154: printMsgs "dialog" "Booting To Desktop (Require Login)"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:204: local cmd=(dialog --backtitle "${__backtitle}" --menu "Please Choose The Bluetooth Device You Would Like To Remove" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:234: local cmd=(dialog --backtitle "${__backtitle}" --menu "Please Choose The Bluetooth Device You Would Like To Connect To" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:252: local cmd=(dialog --backtitle "${__backtitle}" --menu "Please Choose The Security Mode - Try The First One, Then Second If That Fails" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:277: cmd=(dialog --nocancel --backtitle "${__backtitle}" --menu "Please Choose A PIN" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:348: local cmd=(dialog --backtitle "${__backtitle}" --menu "Please Choose The Bluetooth Device You Would Like To Create A udev Rule For" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:376: local cmd=(dialog --backtitle "${__backtitle}" --default-item "${mode}" --menu "Choose A Connect Mode" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth.sh:432: local cmd=(dialog --backtitle "${__backtitle}" --menu "Configure Bluetooth Devices" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:55: local cmd=(dialog --default-item "${default}" --cancel-label "Back" --menu "Choose RetroArch Render Resolution" 22 76 16 )
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:136: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Back" --menu "Choose A Player To Adjust" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:147: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Back" --menu "Choose A Gamepad" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:235: 'menu_driver rgui xmb ozone'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:283: 'Menu driver to use'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:284: 'Fullscreen x resolution. Resolution of 0 uses the resolution of the desktop. (defaults to 0 if unset)'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:285: 'Fullscreen y resolution. Resolution of 0 uses the resolution of the desktop. (defaults to 0 if unset)'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:329: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Back" --menu "Which Configuration Would You Like To Edit?" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:347: function basic_menu_configedit() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:349: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Back" --menu "Which Platform Do You Want To Adjust?" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:378: function advanced_menu_configedit() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:380: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Back" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:425: local cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Exit" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:436: basic_menu_configedit
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/configedit.sh:439: advanced_menu_configedit
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/controlblock.sh:43: local cmd=(dialog --backtitle "$__backtitle" --menu "Choose An Option" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:101: function _menu_start_dbar4gun() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:102: local cmd=(dialog --backtitle "${__backtitle}" --menu "dbar4gun Service" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:162: function _menu_ir_setup() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:163: local cmd=(dialog --backtitle "${__backtitle}" --menu "IR Setup" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:178: _menu_calibration_mode
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:188: function _menu_calibration_mode() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:189: local cmd=(dialog --backtitle "${__backtitle}" --menu "Calibration Mode" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:206: _menu_start_dbar4gun
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:211: _menu_start_dbar4gun
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:216: _menu_start_dbar4gun
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:226: function _menu_set_resolution() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:227: local cmd=(dialog --backtitle "${__backtitle}" --menu "Choose Resolution" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:245: _menu_ir_setup
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:251: _menu_ir_setup
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:255: _menu_ir_setup
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:267: local cmd=(dialog --backtitle "${__backtitle}" --menu "${title}" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/dbar4gun.sh:282: _menu_set_resolution
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/docsview.sh:32: local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which page would you like to view?" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/docsview.sh:51: local cmd=(dialog --backtitle "$__backtitle" --menu "RetroPie-Setup Docs Viewer" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:276: cat > /usr/share/applications/archypie.desktop << _EOF_
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:277: [Desktop Entry]
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:279: Exec=gnome-terminal --full-screen --hide-menubar -e emulationstation
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:302: rm -rfv "/usr/share/icons/retropie.svg" "/usr/share/applications/archypie.desktop"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:362: local cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation.sh:384: iniSet "menu_swap_ok_cancel_buttons" "${ra_swap}" "${configdir}/all/retroarch.cfg"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/esthemes.sh:348: local cmd=(dialog --default-item "${default}" --backtitle "${__backtitle}" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/esthemes.sh:357: cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option For Gallery" 12 40 06)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/esthemes.sh:411: cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option For Theme" 12 60 06)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:9: rp_module_help="ROM Extensions: .ml\n\nCopy Moonlight Launch Configurations To: ${romdir}/steam\n\nUse The Configuration Menu For Pairing/Unpairing To/From A Re
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:328: # Start The Menu GUI
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:331: # Create Menu Options
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:339: # show main menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:340: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --item-help --menu "Remote Apps" 13 60 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:382: # Create Menu Options
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:390: # Show Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:391: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --item-help --menu "Host Compatibility Options" 16 45 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:430: # Create Menu Options
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:440: # Show Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:441: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --item-help --menu "Global Resolution\nCurrent: ${resolution}" 16 45 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:490: # Create Menu Options
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:499: # show main menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:500: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --item-help --menu "Stream Bitrate\nCurrent: ${bitrate}" 16 45 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:533: # Start The Menu GUI
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:536: # Create Menu Options, If No Address Show 'autodiscover'
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:548: # Show Main Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/moonlight.sh:549: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --menu "Choose An Option" 16 60 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/powerblock.sh:41: local cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/retronetplay.sh:38: cmd=(dialog --backtitle "${__backtitle}" --menu "Please Set The Netplay Mode" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/retronetplay.sh:93: cmd=(dialog --backtitle "${__backtitle}" --menu "Configure RetroArch Netplay\nInternal IP: ${ip_int} External IP: ${ip_ext}" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:40: iniSet "disable_menu" "0"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:82: cmd=(dialog --backtitle "${__backtitle}" --default-item "${default}" --cancel-label "Back" --menu "Configure CPU Governor On Command Launch\nCurrently: ${status
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:103: 'disable_menu=0' \
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:112: cmd=(dialog --backtitle "${__backtitle}" --cancel-label "Exit" --default-item "${default}" --menu "Choose An Option" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:115: if [[ "${disable_menu}" -eq 0 ]]; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:116: options+=(1 "Launch Menu (Currently: Enabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:118: options+=(1 "Launch Menu (Currently: Disabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:122: options+=(2 "Launch Menu Art (Currently: Enabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:124: options+=(2 "Launch Menu Art (Currently: Disabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:128: options+=(3 "Launch Menu Joystick Control (Currently: Enabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:130: options+=(3 "Launch Menu Joystick Control (Currently: Disabled)")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand.sh:142: iniSet "disable_menu" "$((disable_menu ^ 1))"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/samba.sh:72: local cmd=(dialog --backtitle "${__backtitle}" --menu "Choose An Option" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:518: local cmd=(dialog --backtitle "${__backtitle}" --help-button --colors --no-collapse --default-item "${default}" --ok-label "Ok" --cancel-label "Back" --title "A
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:601: [3]="Options For Resource Gathering And Caching Sub-Menu.\nClick To Open It."
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:603: [5]="Options For EmulationStation Game List Generation Sub-Menu.\nClick to open it and change the options."
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:605: [A]="Advanced Options Sub-Menu."
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:614: local cmd=(dialog --backtitle "${__backtitle}" --colors --cancel-label "Exit" --help-button --no-collapse --cr-wrap --default-item "${default}" --menu "   Skysc
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:697: --menu "Choose One Of The Available Scraping Sources" 18 50 9)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:789: local cmd=(dialog --backtitle "${__backtitle}" --help-button --colors --no-collapse --default-item "${default}" --ok-label "Ok" --cancel-label "Back" --title "C
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/skyscraper.sh:904: local cmd=(dialog --backtitle "${__backtitle}" --help-button --colors --no-collapse --default-item "${default}" --ok-label "Ok" --cancel-label "Back" --title "G
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/usbromservice.sh:118: cmd=(dialog --backtitle "$__backtitle" --menu "Choose from an option below." 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/wifi.sh:105: local cmd=(dialog --backtitle "${__backtitle}" --menu "Please Choose The Network You Would Like To Connect To" 22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/wifi.sh:113: cmd=(dialog --backtitle "${__backtitle}" --nocancel --menu "Please Choose The Wi-Fi Type" 12 40 6)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/wifi.sh:250: local cmd=(dialog --backtitle "${__backtitle}" --colors --cancel-label "Exit" --item-help --help-button --default-item "${default}" --title "Configure Wi-Fi" --
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/xarcade2jstick.sh:54: local cmd=(dialog --backtitle "${__backtitle}" --menu "Service Is Currently: ${status}" 22 86 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/bluetooth/bluezutils.py:10: "org.freedesktop.DBus.ObjectManager")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/inputconfiguration.sh:190: sdl1_map["1073741942"]="319" # SDLK SDLK_MENU
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/openmsx.sh:117: emu_key="main_menu_open"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/openmsx.sh:141: # Add An Extra Configuration For 'Start' To Close The OSD Menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/openmsx.sh:143: echo "    bind \"joy1 ${bind_msx_emulator}\" -layer osd_menu \"main_menu_close\"" >> "${temp_conf}"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/retroarch.sh:173: keys=("input_x" "input_menu_toggle")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/retroarch.sh:322: keys=("input_player1_x" "input_menu_toggle")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/retroarch.sh:377: for key in input_state_slot_decrease input_state_slot_increase input_reset input_menu_toggle input_load_state input_save_state input_exit_emulator; do
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/emulationstation/configscripts/retroarch.sh:411: iniSet "input_menu_toggle" "f1"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:52: ## (selectable in the runcommand menu) to the emulator to be launched. The
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:69: ## also displayed in the video output menu (detailed below), so for our purposes
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:119: iniGet "disable_menu"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:120: DISABLE_MENU="$ini_value"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:584: function main_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:590: local user_menu=0
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:591: [[ -d "$CONFIGDIR/all/runcommand-menu" && -n "$(find "$CONFIGDIR/all/runcommand-menu" -maxdepth 1 -name "*.sh")" ]] && user_menu=1
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:638: if [[ "$user_menu" -eq 1 ]]; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:639: options+=(U "User Menu")
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:651: cmd=(dialog --nocancel --default-item "$default" --menu "System: $SYSTEM\nEmulator: $EMULATOR\nVideo Mode: $temp_mode\nROM: $ROM_BN"  22 76 16 )
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:697: user_menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:737: local menu_title="Choose $mode_desc\nCurrently: "
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:739: menu_title+="(not set)"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:741: menu_title+="$default"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:744: local cmd=(dialog --default-item "$default" --menu "$menu_title"  22 76 16 )
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:791: local menu_title="Choose $mode_desc\nCurrently: "
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:793: menu_title+="(not set)"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:795: menu_title+="$default"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:798: local cmd=(dialog $cancel --default-item "$default_id" --menu "$menu_title"  22 76 16 )
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:857: local cmd=(dialog --default-item "$default" --menu "Choose RetroArch Render Resolution" 22 76 16 )
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:876: function user_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:886: done < <(find "$CONFIGDIR/all/runcommand-menu" -type f -name "*.sh" | sort)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:892: cmd=(dialog --default-item "$default" --cancel-label "Back" --menu "Choose An Option"  22 76 16)
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:896: script="runcommand-menu/${options[choice*2-1]}.sh"
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1259: elif [[ "$DISABLE_MENU" -ne 1 && "$USE_ART" -ne 1 ]]; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1270: function check_menu() {
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1277: main_menu
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1349: if [[ "$DISABLE_MENU" -ne 1 ]]; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1350: if ! check_menu; then
+/home/rizzo/ArchyPie-Setup/scriptmodules/supplementary/runcommand/runcommand.sh:1366: # resave info after menu and resolution replacements so runcommand.info is up to date

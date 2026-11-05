@@ -40,7 +40,7 @@ fi
 user="${__user}"
 
 home="$(eval echo ~${__user})"
-datadir="${home}/ArchyPie"
+datadir="${home}/.local/share/archypie"
 biosdir="${datadir}/BIOS"
 romdir="${datadir}/roms"
 arpdir="${datadir}/configs"
